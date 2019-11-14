@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131255348-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-131255348-2');
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" href="./img/aff.png">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title id="sitetitle"></title>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="container" id="headercontainer">
+        <div class="row">
+            <div class="col-lg" align="left">
+                <img src="./img/af.png" alt="Art Fervour Logo" id="aflogo">
+            </div>
+            <div class="col-lg" align="right" id="headernav"></div>
+        </div>
+    </div>
+
+    <div class="container maincontainer" id="citycontainer">
+        <h4 class="maintext" id="cityh"></h4>
+        <div class="row" id="cityrow"></div>
+    </div>
+
+    <div class="container maincontainer" id="q1container">
+        <h4 class="maintext" id="q1h"></h4>
+        <div class="row" id="q1row"></div>
+    </div>
+
+    <div class="container maincontainer" id="q2container">
+        <h4 class="maintext" id="q2h"></h4>
+        <div class="row" id="q2row"></div>
+    </div>
+
+    <div class="container maincontainer" id="q3container">
+        <h4 class="maintext" id="q3h"></h4>
+        <div class="row" id="q3row"></div>
+    </div>
+
+    <div class="container maincontainer" id="q4container">
+        <h4 class="maintext" id="q4h"></h4>
+        <div class="row" id="q4row"></div>
+    </div>
+
+    <div class="container maincontainer" id="q5container">
+        <h4 class="maintext" id="q5h"></h4>
+        <div class="row" id="q5row"></div>
+    </div>
+
+    <div class="container maincontainer" id="q6container">
+        <h4 class="maintext" id="q6h"></h4>
+        <div class="row" id="q6row"></div>
+    </div>
+
+    <div class="container maincontainer" id="q7container">
+        <h4 class="maintext" id="q7h"></h4>
+        <div class="row" id="q7row"></div>
+    </div>
+
+    <div class="container maincontainer" id="emailcontainer" align="center">
+        <h4 class="maintext" id="emailh"></h4>
+        <div class="row">
+            <div class="col-sm" align="center">
+                <div class="card" id="emailcard">
+                    <div class="card-body">
+                        <form name="quizinfo" id="emailform" method="POST" data-netlify="true">
+                            <div class="form-group">
+                                <label for="inputemail">Email address</label>
+                                <input type="email" class="form-control" id="inputemail" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <input type="text" name="city" class="hiddeninput" id="cinput" disabled>
+                            <input type="text" name="q1" class="hiddeninput" id="q1input" disabled>
+                            <input type="text" name="q2" class="hiddeninput" id="q2input" disabled>
+                            <input type="text" name="q3" class="hiddeninput" id="q3input" disabled>
+                            <input type="text" name="q4" class="hiddeninput" id="q4input" disabled>
+                            <input type="text" name="q5" class="hiddeninput" id="q5input" disabled>
+                            <input type="text" name="q6" class="hiddeninput" id="q6input" disabled>
+                            <input type="text" name="q7" class="hiddeninput" id="q7input" disabled>
+                            <input type="text" name="outcome" class="hiddeninput" id="outcomeinput" disabled>
+                            <button type="submit" class="btn btn-light" id="submitemail" disabled>Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <div class="container maincontainer" id="endingcontainer" align="center">
+        <div class="fb-share-button" data-href="https://artfervour.com" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fartfervour.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+        <br><br>
+        <h4 id="endingh"></h4>
+        <br>
+        <p class="maintext" align="left" id="endingp"></p>
+        <img src="" alt="Your personalized art guide" class="guideimg" id="guideimg">
+        <br><br>
+        <button type="button" id="restart" class="btn btn-light">Restart Quiz</button>
+        <a href="https://artfervour.com" class="btn btn-light" role="button">Back to Art Fervour</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./js/constants.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

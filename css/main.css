@@ -1,0 +1,42 @@
+.card {
+    width: 18rem;
+}
+.card:hover {
+    cursor: pointer;
+    border-color: black;
+}
+.card-img-top {
+    padding: 4px;
+}
+.selectedcard {
+    border-color: black;
+}
+.guideimg {
+    width: 100%;
+    max-width: 720px;
+}
+#emailcard, #emailcard:hover {
+    border: none !important;
+    cursor: default;
+}
+#aflogo {
+    height: 63px;
+}
+#aflogonav {
+    height: 63px;
+    margin-left: 6px;
+}
+#headercontainer {
+    padding-top: 3.2rem;
+}
+.maincontainer {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+}
+.maintext {
+    padding-bottom: 1.6rem;
+}
+
+.hiddeninput {
+    display: none;
+}
