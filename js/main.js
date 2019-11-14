@@ -175,7 +175,7 @@ $( document ).ready(function() {
     });
     $('.q4').click(function() {
         q[3] = $(this).attr('id');
-        if(q[3]=="q4b" || q[3]=="q4c"){
+        if(q[3]=="q4b" || q[3]=="q4c" || q[3]=="q4d"){
             T++;
             console.log("Selected option is = ", q[3]);
             console.log("T value is = ", T);
