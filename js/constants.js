@@ -107,6 +107,10 @@ var d = {
             {
                 "id": "q4c",
                 "img": "q4c.jpg"
+            },
+            {
+                "id": "q4d",
+                "img": "q4d.jpg"
             }
         ]
     },
